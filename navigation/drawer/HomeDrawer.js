@@ -7,6 +7,7 @@ import { Iconicons } from '@expo/vector-icons';
 import HomeScreen1 from '../screen/HomeScreen1';
 import HomeScreen2 from '../screen/HomeScreen2';
 import HomeScreen3 from '../screen/HomeScreen3';
+import SettingScreen1 from '../screen/SettingScreen1';
 
 const defaultNavigationOptions = {
     headerStyle: {
@@ -18,6 +19,7 @@ const defaultNavigationOptions = {
 const Home1Stack = StackNavigator(
     {
       HomeScreen1: { screen: HomeScreen1 },
+      SettingScreen1: {screen: SettingScreen1 },
     },
     { 
       headerMode: 'screen',

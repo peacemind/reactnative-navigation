@@ -1,24 +1,25 @@
 import Expo from 'expo';
 import React, { Component } from 'react';
-import { View, Text, Button, TouchableHighlight ,StyleSheet } from 'react-native';
+import { View, Text, Button, TouchableHighlight, StyleSheet } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-class HomeScreen1 extends Component {
+class SettingScreen1 extends Component {
     static navigationOptions = {
-        title: 'Welcome HomeScreen 1',
+        title: 'Welcome Setting Screen 1',
+        tabBarLabel: 'SettingScreen1',
     };
     
     render() {
         const { navigate } = this.props.navigation;
         
-        return ( 
+        return (
             <View style={styles.container}>
                 <TouchableHighlight
-                    onPress={() => navigate('SettingScreen1')}
+                    onPress={() => navigate('HomeScreen1')}
                     style={[styles.button, {backgroundColor: '#057a72'}]}>
-                    <Text style={styles.buttonText}> Go To Setting Screen 1</Text>
+                    <Text style={styles.buttonText}> Go To Home Screen 1</Text>
                 </TouchableHighlight>
-        </View> 
+            </View> 
         );
     }
 }
@@ -50,4 +51,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default HomeScreen1;
+export default SettingScreen1;
